@@ -1,0 +1,17 @@
+
+name: Build DANGER IPA
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  build:
+    uses: Jeho974/ipa-build-template/.github/workflows/build-unsigned-ipa.yml@main
+    permissions:
+      contents: write
+    with:
+      kind: xcode
+      project_dir: .
+      app_name: DANGER
