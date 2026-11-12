@@ -13,5 +13,5 @@ jobs:
       contents: write
     with:
       kind: xcode
-      project_dir: .
+      project_dir: ios
       app_name: DANGER
